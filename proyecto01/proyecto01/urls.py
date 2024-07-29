@@ -1,20 +1,5 @@
-"""
-URL configuration for proyecto01 project.
 
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/4.2/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
-from proyecto01.views import saludo, mejor_saludo, saludar_por_nombre, probando_template
+from proyecto01.views import saludo, mejor_saludo, saludar_por_nombre, load_about
 from django.contrib import admin
 from django.urls import path, include
 
@@ -23,7 +8,7 @@ urlpatterns = [
     path('saludo/', saludo),
     path('mejor_saludo', mejor_saludo),
     path('saludar_nombre/<nombre>', saludar_por_nombre),
-    path('probando_template/', probando_template),
+    path('info/', load_about),
     path('AppCoder/', include('AppCoder.urls'))
     
 ]

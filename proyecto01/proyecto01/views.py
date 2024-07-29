@@ -3,9 +3,7 @@ from django.template import loader, Template, context
 
 
 def saludo (request):
-    
     return HttpResponse('Hola, este es un saludo')
-
 
 def mejor_saludo(request):
     
@@ -17,18 +15,6 @@ def saludar_por_nombre(self, nombre):
     
     return HttpResponse(saludo_a_mostrar)
 
-def probando_template(self):
-    
-    nom='Marvin'
-    ap='Cruz'
-    
-    diccionario= {'nombre':nom,'apellido':ap}
-    
-    plantilla=loader.get_template('index.html')
-    
-    documento=plantilla.render(diccionario)
-    
-    return HttpResponse(documento)
     
 def load_about(self):
     
@@ -38,4 +24,4 @@ def load_about(self):
     
     documento=plantilla.render(acerca_de_mi)
      
-    
+    return HttpResponse(documento)
