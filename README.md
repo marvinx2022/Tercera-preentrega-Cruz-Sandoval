@@ -10,7 +10,7 @@ Tutor: Diego Caceres
 
 CONTENIDO:
 
-Se han creado las siguientes URL's en el prouecto raiz:
+Se han creado las siguientes URL's en el proyecto raiz:
 
 admin/                    =====> Muestra el administrador de Django
 saludo/                   =====> Muestra un saludo generico
@@ -21,12 +21,14 @@ info/                     =====> Muestra información muy básica del autor.
 
 Para efectos de esta Preentrega se ha creado la App denominada AppCoder, con las siguientes URL's asociadas
 
-AppCoder/main/         =====> Pestaña principal, muestra información general y permite la navegación mediante botones. 
-AppCoder/estudiantes/  =====> Pestaña estudiantes, permite crear registro de estudiantes y realizar consultas
-AppCoder/profesores/   =====> Pestaña profesores, permite crear registro de profesores y realizar consultas
-AppCoder/cursos/       =====> Pestaña cursos, permite crear registro de cursos y realizar consultas
-AppCoder/carreras/     =====> Pestaña cursos, permite crear registro de carreras y realizar consultas
+AppConsultoria/index/     =====> Pestaña principal, muestra información general y permite la navegación mediante botones. 
+AppCoder/servicios/       =====> Pestaña servicios, permite crear registro de servicios y realizar consultas
+AppCoder/consultores/     =====> Pestaña consultores, permite crear registro de consultores y realizar consultas
+AppCoder/clientes/        =====> Pestaña clientes, permite crear registro de cursos y realizar consultas
+AppCoder/publicaciones/   =====> Pestaña publicaciones, permite crear registro de carreras y realizar consultas
 
+La naveación puede reaizarse escribiendo la ruta en el naveador o desde la barra de navegación en la parte superior de la web desarrollada. 
 
+Para la navegación entre vistas se ha aplicado el concepto de herencia de vistas. 
 
 

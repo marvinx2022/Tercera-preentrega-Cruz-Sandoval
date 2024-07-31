@@ -10,9 +10,9 @@ from django.urls import path
 
 urlpatterns = [
     
+    path('main/', main, name='Main'),
     path('estudiantes/', estudiantes, name='Estudiantes'),
     path('profesores/', profesores, name='Profesores'),
-    path('main/', main, name='Main'),
     path('cursos/', cursos, name='Cursos')
 
     

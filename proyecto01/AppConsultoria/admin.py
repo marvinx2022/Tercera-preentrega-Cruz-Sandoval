@@ -1,7 +1,7 @@
 from django.contrib import admin
-from AppCoder.models import Consultor, Clientes, Servicios, PublicacionesAcademicas 
 
-# Register your models here.
+from AppConsultoria.models import Consultor, Clientes, Servicios, PublicacionesAcademicas 
+
 
 admin.site.register(Consultor)
 admin.site.register(Clientes)

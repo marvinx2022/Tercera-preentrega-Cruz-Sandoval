@@ -9,6 +9,6 @@ urlpatterns = [
     path('mejor_saludo', mejor_saludo),
     path('saludar_nombre/<nombre>', saludar_por_nombre),
     path('info/', load_about),
-    path('AppCoder/', include('AppCoder.urls'))
-    
+    path('AppCoder/', include('AppCoder.urls')),
+    path('AppConsultoria/', include('AppConsultoria.urls'))
 ]
