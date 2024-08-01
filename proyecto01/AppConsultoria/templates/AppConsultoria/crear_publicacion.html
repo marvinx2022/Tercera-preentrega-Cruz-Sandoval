@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario- Ingresar nueva publicacion</title>
+</head>
+<body>
+    <h1>Ingresar nueva publicacion</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ miFormulario.as_p }}
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

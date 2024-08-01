@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario- Ingresar nuevo cliente</title>
+</head>
+<body>
+
+
+
+
+    <h1>Ingresar nuevo cliente</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ miFormulario.as_p }}
+        <button type="submit">Enviar</button>
+    </form>
+
+  
+
+</body>
+</html>

@@ -8,7 +8,7 @@ class Consultor(models.Model):
     salario=models.FloatField()
     
     def __str__(self):
-        return f'Nombre consultor:{self.nombre} {self.apellido}, especialidad: {self.duracion}'
+        return f'Nombre consultor:{self.nombre} {self.apellido}, especialidad: {self.carrera}'
     
     
 class Clientes(models.Model):
@@ -19,7 +19,7 @@ class Clientes(models.Model):
     proyectos = models.CharField(max_length=20)
     
     def __str__(self):
-        return f'Cliente: {self.nombre}, desde el  ==> {self.fecha_ingreso}'
+        return f'Cliente: {self.empresa}, desde el  ==> {self.fecha_ingreso}'
     
 class Servicios(models.Model):
     nombre_servicio=models.CharField(max_length=20)
@@ -27,7 +27,7 @@ class Servicios(models.Model):
     precio=models.FloatField()
     
     def __str__(self):
-        return f'Servicio: {self.nombre}, precio ==>{self.precio}'
+        return f'Servicio: {self.nombre_servicio}, precio ==>{self.precio}'
     
     
 class PublicacionesAcademicas(models.Model):
